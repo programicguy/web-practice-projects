@@ -15,7 +15,6 @@ This repository is dedicated to showcasing my practice projects and demonstratin
 
 If you have any questions, suggestions, or collaboration opportunities, feel free to reach out to me:
 
-- LinkedIn: [Your LinkedIn Profile](https://www.linkedin.com/in/programicguy/){:target="_blank"}
+- LinkedIn: [programicguy](https://www.linkedin.com/in/programicguy/){:target="_blank"}
 
 Thank you for visiting, and I hope you enjoy exploring my practice projects!
-
