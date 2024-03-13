@@ -8,6 +8,8 @@ Welcome to my practice repository for web design and development projects! This 
 
 2. **CSS Loading Spinner** [Preview](https://css-loading-spiner.netlify.app/)
 
+3. **Variant Selector** [Preview](https://variant-selector.netlify.app/)
+
 ## About This Repository
 
 This repository is dedicated to showcasing my practice projects and demonstrating my proficiency in front-end development. While contributions are not expected, feedback and suggestions are always appreciated. Feel free to explore the projects, provide insights, or reach out with any inquiries.
