@@ -1,0 +1,102 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000;
+    font-family: Tahoma, sans-serif;
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.animated-skills-container {
+    background-color: #333;
+    color: #fff;
+    max-width: 500px;
+    width: 100%;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.skill-box {
+    margin: 30px 0;
+}
+
+.skill-box .skill-title {
+    display: block;
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.skill-box .skills-bar {
+    width: 100%;
+    height: 8px;
+    background-color: rgba(0, 0, 0, 0.2);
+    border-radius: 5px;
+}
+
+.skill-box .skill-percentage {
+    display: block;
+    position: relative;
+    background-color: #4070f4;
+    color: #fff;
+    width: 90%;
+    height: 8px;
+    border-radius: 5px 0 0 5px;
+    animation: animate 1.5s ease-in-out 1 normal backwards;
+}
+
+.skill-box .css {
+    width: 70%;
+    animation-delay: .1s;
+}
+
+.skill-box .js {
+    width: 80%;
+    animation-delay: .2s;
+}
+
+.skill-box .react {
+    width: 60%;
+    animation-delay: .3s;
+}
+
+.skill-box .skill-percentage .tooltip {
+    position: absolute;
+    right: -15px;
+    top: -25px;
+    background-color: #4070f4;
+    padding: 3px 6px;
+    font-size: 10px;
+    border-radius: 2px;
+    z-index: 1;
+}
+
+.skill-box .tooltip::after {
+    content: "";
+    position: absolute;
+    right: 10px;
+    bottom: -2px;
+    background-color: #4070f4;
+    width: 15px;
+    height: 15px;
+    z-index: -1;
+    transform: rotate(45deg);
+}
+
+@keyframes animate {
+    0% {
+        width: 0;
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
