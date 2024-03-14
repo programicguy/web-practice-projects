@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Animated Progess Bar</title>
+</head>
+<body>
+    <!-- Animated Progess Bar  -->
+    <div class="container">
+        <div class="progress-bar">
+            <div id="progress-count">0%</div>
+            <div class="progress" id="progress"></div>
+        </div>
+    </div>
+
+    <!-- Script for the count  -->
+    <script>
+        // Get the count element 
+        const progressCount = document.getElementById("progress-count");
+        
+        // Function to update the progress count 
+        function updateProgressCount(progress) {
+            progressCount.innerText = `${progress}%`;
+        }
+        
+        // Function to count the progress 
+        function countProgress() {
+            let progress = 0;
+
+            const interval = setInterval(() => {
+                progress++;
+                updateProgressCount(progress);
+                if(progress === 100) {
+                    clearInterval(interval);
+                }
+            }, 40)
+        }
+        countProgress()
+
+    </script>
+</body>
+</html>
